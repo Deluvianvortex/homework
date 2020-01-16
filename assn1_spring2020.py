@@ -1,8 +1,4 @@
-# PerleyP1
-
-# Programmer (scripter): Michael Perley
-
-# E-Mail: mperley2@cnm.edu
+# pypyravol - finds the volume of a pyramid of dynamic height and length
 
 # Purpose: Basic exercise to improve comprehension of python scripting
 
@@ -31,4 +27,14 @@ v = bitpow(a, 2) / 3
 s = square(bitpow(h, 2) + (bitpow(a/2, 2)))
 area = s*a/2
 
-print(
+txt = "The length of the base of the pyramid is {}"
+print(txt.format(a))
+
+txt1 = "The height of the pyramid is {}"
+print(txt1.format(h))
+
+txt2 = "The total surface area of the faces is {}"
+print(txt2.format(area))
+
+txt3 = "The volume of the pyramid is {}"
+print(txt3.format(v))
