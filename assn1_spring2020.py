@@ -2,11 +2,11 @@
 
 # Purpose: Basic exercise to improve comprehension of python scripting
 
-def bitpow(n, p):
+def bitpow(x, n):
     pwr = 1
     while n!=0:
         if (n & 1):
-            pwr *= n
+            pwr *= x
         n = n >> 1
         x = x * x
     return pwr
@@ -23,9 +23,9 @@ def square(n):
 a = input("Please Enter the length of the base of the pyramid: ")
 h = input("Please Enter the height of the pyramid: ")
 
-v = bitpow(a, 2) / 3
-s = square(bitpow(h, 2) + (bitpow(a/2, 2)))
-area = s*a/2
+v = (bitpow(float(a), 2)) / 3
+s = square(bitpow(float(h), 2) + (bitpow(float(a)/2, 2)))
+area = (s*float(a))/2
 
 txt = "The length of the base of the pyramid is {}"
 print(txt.format(a))
