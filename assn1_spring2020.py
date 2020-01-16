@@ -23,18 +23,18 @@ def square(n):
 a = input("Please Enter the length of the base of the pyramid: ")
 h = input("Please Enter the height of the pyramid: ")
 
-v = (bitpow(float(a), 2)) / 3
+v = (bitpow(float(a), 2))*float(h) / 3
 s = square(bitpow(float(h), 2) + (bitpow(float(a)/2, 2)))
 area = (s*float(a))/2
 
-txt = "The length of the base of the pyramid is {}"
-print(txt.format(a))
+print("The length of the base of the pyramid is ", end="")
+print("{0:.3f}".format(float(a)))
 
-txt1 = "The height of the pyramid is {}"
-print(txt1.format(h))
+print("The height of the pyramid is ", end="")
+print("{0:.3f}".format(float(h)))
 
-txt2 = "The total surface area of the faces is {}"
-print(txt2.format(area))
+print("The total surface area of the faces is ", end="")
+print("{0:.3f}".format(s))
 
-txt3 = "The volume of the pyramid is {}"
-print(txt3.format(v))
+print("The volume of the pyramid is ", end="")
+print("{0:.3f}".format(v))
